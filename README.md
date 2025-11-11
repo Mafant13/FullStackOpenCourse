@@ -24,6 +24,4 @@ A[send note] --> |saved as new_note_spa in JSON| B[form = elements with id 'note
 F[pushes the note] --> G[clear the input field] --> H[calls the Redrawnotes funcion] -->  I{is readystate= 4 AND is status= 200};
 I --> |yes| J[JSON to JS redable format] --> K[execute funcion rewritenotes] --> L{foreach} --> |go| M[create an li] --> N[it appends it to the ul] --> O[adds the note content] --> I
 --> |stop| P[is note alredy has a childnode] --> Q[remove child]  --> R[insert the list in the html file] --> S[recalls the funcion sendtoserver] --> T[saves it using POST to the json file] --> U[requests the content-type and the application/json headers] --> V[and it stringifyes the var note, sending it's content]
-
-
 ```
