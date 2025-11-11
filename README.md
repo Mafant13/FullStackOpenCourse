@@ -1,5 +1,5 @@
-
-#Part 4
+#PART0
+#Part 0.4
 ``` mermaid
   flowchart LR
 
@@ -7,7 +7,7 @@ A[send note] --> |saved as new_note in JSON| B[it continues to listen to a new c
 D --> |Yes| E[JSON to JS redable format] --> F[print data] --> G[add ul with attribute class:notes] --> H{foreach} --> |go| I[create an li] --> J[it appends it to the ul] --> K[adds the note content] --> H
 --> |stop| L[insert the list in the html file] --> B
 ```
-#Part 5
+#Part 0.5
 ``` mermaid
   flowchart LR
 
@@ -16,7 +16,7 @@ F --> |yes| G[JSON to JS redable format] --> H[execute funcion rewritenotes] -->
 --> |stop| M[is note alredy has a childnode] --> N[remove child]  --> O[insert the list in the html file]
 ``` 
 
-#Part 6
+#Part 0.6
 ``` mermaid
   flowchart LR
 
