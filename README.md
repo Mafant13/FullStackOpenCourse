@@ -1,5 +1,5 @@
 ``` mermaid
   flowchart LR
 
-A[send] 
+A[send note] --> |saved as new_note| B[] 
 ```
