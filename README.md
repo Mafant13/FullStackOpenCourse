@@ -20,5 +20,6 @@ F --> |yes| G[JSON to JS redable format] --> H[execute funcion rewritenotes] -->
 ``` mermaid
   flowchart LR
 
-A[send note] --> |saved as new_note_spa in JSON| B[form = elements with id 'notes_form'] --> C[onsubmit] --> D[prevent the use of the traditional web app]
+A[send note] --> |saved as new_note_spa in JSON| B[form = elements with id 'notes_form'] --> C[onsubmit] --> D[prevent the use of the traditional web app] --> E[creates a var note with content and date] -->
+F[pushes the note that writes the content in the console] --> G[saves it using POST to the json file] --> H[requests the content-type and the application/json headers] --> I[and it stringifyes the var note]
 ```
